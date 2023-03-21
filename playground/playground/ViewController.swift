@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,20 @@ class ViewController: UIViewController {
         
         self.view.backgroundColor = .yellow
     }
-
+    
+    
+    @IBAction func tapBtnLog(_ sender: Any) {
+        print("tapBtnLog")
+    }
+    
+    
+    @IBAction func tapBtnRealm(_ sender: Any) {
+        
+        print("tapBtnRealm")
+        let vc = RealmViewController(nibName: "RealmViewController", bundle: nil)
+        self.present(vc, animated: true)
+    }
+    
 
 }
 

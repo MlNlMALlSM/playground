@@ -17,6 +17,10 @@
 		1073983D29C842F800077695 /* playgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1073983C29C842F800077695 /* playgroundTests.swift */; };
 		1073984729C842F800077695 /* playgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1073984629C842F800077695 /* playgroundUITests.swift */; };
 		1073984929C842F800077695 /* playgroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1073984829C842F800077695 /* playgroundUITestsLaunchTests.swift */; };
+		1073985829C8566C00077695 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1073985629C8566C00077695 /* RealmViewController.swift */; };
+		1073985929C8566C00077695 /* RealmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1073985729C8566C00077695 /* RealmViewController.xib */; };
+		1073985D29C8569700077695 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1073985B29C8569700077695 /* BaseViewController.swift */; };
+		1073985E29C8569700077695 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1073985C29C8569700077695 /* BaseViewController.xib */; };
 		8CB85FF92D5916D7E49CDF79 /* Pods_playgroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251B6F06004F1C64DCBFBF03 /* Pods_playgroundTests.framework */; };
 		9D67514F153979E835E4721E /* Pods_playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035E24625CE61D4E87BE5708 /* Pods_playground.framework */; };
 		A4F324934B9E90E8E7F06566 /* Pods_playground_playgroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41B9E16B0A629285A2F839 /* Pods_playground_playgroundUITests.framework */; };
@@ -56,6 +60,10 @@
 		1073984229C842F800077695 /* playgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playgroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1073984629C842F800077695 /* playgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playgroundUITests.swift; sourceTree = "<group>"; };
 		1073984829C842F800077695 /* playgroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playgroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1073985629C8566C00077695 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		1073985729C8566C00077695 /* RealmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealmViewController.xib; sourceTree = "<group>"; };
+		1073985B29C8569700077695 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1073985C29C8569700077695 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		251B6F06004F1C64DCBFBF03 /* Pods_playgroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_playgroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69471C407D55B5A2C4F9E015 /* Pods-playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playground.release.xcconfig"; path = "Target Support Files/Pods-playground/Pods-playground.release.xcconfig"; sourceTree = "<group>"; };
 		6D4EC4E0C8A0C86753958703 /* Pods-playgroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playgroundTests.debug.xcconfig"; path = "Target Support Files/Pods-playgroundTests/Pods-playgroundTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +139,8 @@
 		1073982129C842F400077695 /* playground */ = {
 			isa = PBXGroup;
 			children = (
+				1073985A29C8568500077695 /* Base */,
+				1073985529C8565300077695 /* Realm */,
 				1073982229C842F400077695 /* AppDelegate.swift */,
 				1073982429C842F400077695 /* SceneDelegate.swift */,
 				1073982629C842F400077695 /* ViewController.swift */,
@@ -158,6 +168,24 @@
 				1073984829C842F800077695 /* playgroundUITestsLaunchTests.swift */,
 			);
 			path = playgroundUITests;
+			sourceTree = "<group>";
+		};
+		1073985529C8565300077695 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				1073985629C8566C00077695 /* RealmViewController.swift */,
+				1073985729C8566C00077695 /* RealmViewController.xib */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		1073985A29C8568500077695 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1073985B29C8569700077695 /* BaseViewController.swift */,
+				1073985C29C8569700077695 /* BaseViewController.xib */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		422FF4C999EB82674035B1B5 /* Frameworks */ = {
@@ -279,6 +307,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1073985929C8566C00077695 /* RealmViewController.xib in Resources */,
+				1073985E29C8569700077695 /* BaseViewController.xib in Resources */,
 				1073983229C842F700077695 /* LaunchScreen.storyboard in Resources */,
 				1073982F29C842F700077695 /* Assets.xcassets in Resources */,
 				1073982A29C842F400077695 /* Main.storyboard in Resources */,
@@ -411,8 +441,10 @@
 			files = (
 				1073982D29C842F400077695 /* playground.xcdatamodeld in Sources */,
 				1073982729C842F400077695 /* ViewController.swift in Sources */,
+				1073985829C8566C00077695 /* RealmViewController.swift in Sources */,
 				1073982329C842F400077695 /* AppDelegate.swift in Sources */,
 				1073982529C842F400077695 /* SceneDelegate.swift in Sources */,
+				1073985D29C8569700077695 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
